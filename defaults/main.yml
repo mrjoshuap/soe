@@ -1,0 +1,23 @@
+---
+# defaults file for mrjoshuap.soe
+
+soe_skip_cockpit_install: no
+soe_skip_hosts_override: no
+soe_skip_insights_install: no
+soe_skip_ipaclient_install: no
+soe_skip_kdump_install: no
+soe_skip_local_admin_users: no
+soe_skip_local_sudo_rules: no
+soe_skip_nfs_server: no
+soe_skip_redhat_subscription: no
+soe_skip_selinux_install: no
+soe_skip_ssh_host_keys: no
+soe_skip_ssh_local_host_keys: no
+soe_skip_timesync_install: no
+soe_skip_tuned_install: no
+
+# update the system during SoE application
+soe_skip_update: no
+
+# after updating, reboot the system?
+soe_skip_update_reboot: no

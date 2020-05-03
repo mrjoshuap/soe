@@ -1,0 +1,26 @@
+---
+# handlers file for mrjoshuap.soe
+
+- name: clear sssd cache
+  command: /bin/sss_cache -E
+
+- name: restart firewalld
+  service:
+    name: firewalld
+    state: restarted
+
+- name: restart sshd
+  service:
+    name: sshd
+    state: restarted
+
+- name: start firewalld
+  service:
+    name: firewalld
+    state: started
+    enabled: yes
+
+
+
+
+
